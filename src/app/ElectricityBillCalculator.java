@@ -17,7 +17,7 @@ public class ElectricityBillCalculator {
         for(int i = 0; i < value; i++) {
             electricityBill += houseElectricityBills.get(i) * 100;
         }
-        electricityBill = electricityBill + remainder * houseElectricityBills.get(value);
+        electricityBill += remainder * houseElectricityBills.get(value);
         return electricityBill;
     }
 }
